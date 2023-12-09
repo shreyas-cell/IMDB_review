@@ -1,18 +1,15 @@
 IMDB Review is a fantastic and feature-rich application that does amazing things.
 
-Installation required:- 
-1. Python IDE
-2. MySQL
-3. Install any database administration and development tool (SQL Workbench preferred)
-4. Docker
+
 
 
 
 To run IMDB Review, follow these steps:
+
 1. to deploy the pipeline on kubernetes you will need to create account on GCP by going to google and type google console and create and account which will you 300$ credits.
 2. go to dashboard and create your project.
 3. navigate to left pane go to IAM and admin -> manage resources and select your project.
-4. open terminal and clone this project "git clone https://github.com/pycaret/pycaret-deployment-google.git" , after cloning change the directory to IMDB_review.
+4. open terminal and clone this project "git clone https://github.com/shreyas-cell/IMDB_review.git" , after cloning change the directory to IMDB_review.
 5. run this command to set project environment variable "export PROJECT_ID="replace-this-with-your-current instance"".
 6. to build docker image "docker build -t gcr.io/${PROJECT_ID}/IMDB-app:v1 ."
 7. check available images "docker images"
