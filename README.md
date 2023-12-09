@@ -21,7 +21,8 @@ authorise the popup prompt.
 gcloud config set compute/zone us-west1-c"
 you can choose different zone by using "gcloud zones --help" and choose prefered zone.
 11. create cluster "gcloud container clusters create insurance-cluster --num-nodes=1"
-12. deploy app "kubectl create deployment IMDB-app --image=gcr.io/${PROJECT_ID}/IMDB-app:v1"
-13. expose app to internet "kubectl expose deployment IMDB-app --type=LoadBalancer --port 80 --target-port 8080"
-14. check service if IP is allocated "kubectl get service"
-15. if external IP is allocated copy IP and test app in browser. 
+12. you can check you created images and cluster by searching in searchbox to GKE  and container registry for clusters.
+13. deploy app "kubectl create deployment IMDB-app --image=gcr.io/${PROJECT_ID}/IMDB-app:v1"
+14. expose app to internet "kubectl expose deployment IMDB-app --type=LoadBalancer --port 80 --target-port 8080"
+15. check service if IP is allocated "kubectl get service"
+16. if external IP is allocated copy IP and test app in browser. 
